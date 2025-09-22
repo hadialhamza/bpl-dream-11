@@ -1,0 +1,224 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "image": "https://randomuser.me/api/portraits/men/1.jpg",
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "role": "All-Rounder",
+      "rating": 9.5,
+      "batting_style": "Left-hand-bat",
+      "bowling_style": "Left-arm orthodox spin",
+      "price": 120000
+    },
+    {
+      "id": 2,
+      "image": "https://randomuser.me/api/portraits/men/2.jpg",
+      "name": "Tamim Iqbal",
+      "country": "Bangladesh",
+      "role": "Batsman",
+      "rating": 8.7,
+      "batting_style": "Left-hand-bat",
+      "bowling_style": null,
+      "price": 100000
+    },
+    {
+      "id": 3,
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "name": "Mushfiqur Rahim",
+      "country": "Bangladesh",
+      "role": "Wicket-Keeper",
+      "rating": 8.9,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 95000
+    },
+    {
+      "id": 4,
+      "image": "https://randomuser.me/api/portraits/men/4.jpg",
+      "name": "Mustafizur Rahman",
+      "country": "Bangladesh",
+      "role": "Bowler",
+      "rating": 9.0,
+      "batting_style": null,
+      "bowling_style": "Left-arm fast-medium",
+      "price": 110000
+    },
+    {
+      "id": 5,
+      "image": "https://randomuser.me/api/portraits/men/5.jpg",
+      "name": "Mahmudullah Riyad",
+      "country": "Bangladesh",
+      "role": "All-Rounder",
+      "rating": 8.5,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": "Right-arm offbreak",
+      "price": 90000
+    },
+    {
+      "id": 6,
+      "image": "https://randomuser.me/api/portraits/men/6.jpg",
+      "name": "Chris Gayle",
+      "country": "West Indies",
+      "role": "Batsman",
+      "rating": 9.8,
+      "batting_style": "Left-hand-bat",
+      "bowling_style": null,
+      "price": 150000
+    },
+    {
+      "id": 7,
+      "image": "https://randomuser.me/api/portraits/men/7.jpg",
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "role": "All-Rounder",
+      "rating": 9.6,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": "Right-arm fast",
+      "price": 140000
+    },
+    {
+      "id": 8,
+      "image": "https://randomuser.me/api/portraits/men/8.jpg",
+      "name": "Kieron Pollard",
+      "country": "West Indies",
+      "role": "All-Rounder",
+      "rating": 9.2,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": "Right-arm medium",
+      "price": 135000
+    },
+    {
+      "id": 9,
+      "image": "https://randomuser.me/api/portraits/men/9.jpg",
+      "name": "Imran Tahir",
+      "country": "South Africa",
+      "role": "Bowler",
+      "rating": 8.8,
+      "batting_style": null,
+      "bowling_style": "Legbreak googly",
+      "price": 105000
+    },
+    {
+      "id": 10,
+      "image": "https://randomuser.me/api/portraits/men/10.jpg",
+      "name": "AB de Villiers",
+      "country": "South Africa",
+      "role": "Batsman",
+      "rating": 9.9,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 160000
+    },
+    {
+      "id": 11,
+      "image": "https://randomuser.me/api/portraits/men/11.jpg",
+      "name": "David Warner",
+      "country": "Australia",
+      "role": "Batsman",
+      "rating": 9.3,
+      "batting_style": "Left-hand-bat",
+      "bowling_style": null,
+      "price": 145000
+    },
+    {
+      "id": 12,
+      "image": "https://randomuser.me/api/portraits/men/12.jpg",
+      "name": "Steve Smith",
+      "country": "Australia",
+      "role": "Batsman",
+      "rating": 9.1,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 142000
+    },
+    {
+      "id": 13,
+      "image": "https://randomuser.me/api/portraits/men/13.jpg",
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "role": "Bowler",
+      "rating": 9.4,
+      "batting_style": null,
+      "bowling_style": "Legbreak googly",
+      "price": 130000
+    },
+    {
+      "id": 14,
+      "image": "https://randomuser.me/api/portraits/men/14.jpg",
+      "name": "Mohammad Nabi",
+      "country": "Afghanistan",
+      "role": "All-Rounder",
+      "rating": 8.9,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": "Right-arm offbreak",
+      "price": 115000
+    },
+    {
+      "id": 15,
+      "image": "https://randomuser.me/api/portraits/men/15.jpg",
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "role": "Batsman",
+      "rating": 9.2,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 140000
+    },
+    {
+      "id": 16,
+      "image": "https://randomuser.me/api/portraits/men/16.jpg",
+      "name": "Shaheen Afridi",
+      "country": "Pakistan",
+      "role": "Bowler",
+      "rating": 9.0,
+      "batting_style": null,
+      "bowling_style": "Left-arm fast",
+      "price": 125000
+    },
+    {
+      "id": 17,
+      "image": "https://randomuser.me/api/portraits/men/17.jpg",
+      "name": "Virat Kohli",
+      "country": "India",
+      "role": "Batsman",
+      "rating": 9.8,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 170000
+    },
+    {
+      "id": 18,
+      "image": "https://randomuser.me/api/portraits/men/18.jpg",
+      "name": "Rohit Sharma",
+      "country": "India",
+      "role": "Batsman",
+      "rating": 9.1,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 150000
+    },
+    {
+      "id": 19,
+      "image": "https://randomuser.me/api/portraits/men/19.jpg",
+      "name": "MS Dhoni",
+      "country": "India",
+      "role": "Wicket-Keeper",
+      "rating": 9.0,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 155000
+    },
+    {
+      "id": 20,
+      "image": "https://randomuser.me/api/portraits/men/20.jpg",
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "role": "Batsman",
+      "rating": 9.3,
+      "batting_style": "Right-hand-bat",
+      "bowling_style": null,
+      "price": 145000
+    }
+  ]
+}
