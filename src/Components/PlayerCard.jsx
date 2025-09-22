@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 
-const PlayerCard = ({ player }) => {
+const PlayerCard = ({ player, handleSetBalance }) => {
   const {
     name,
     image,
@@ -13,6 +13,12 @@ const PlayerCard = ({ player }) => {
     price,
     rating,
   } = player;
+
+  const [selectBtn, setSelectBtn] = useState(false);
+  const handleSetSelectBtn = () => {
+    setSelectBtn(true);
+    handleSetBalance(price);
+  };
 
   return (
     <div className="flex flex-col gap-3 border border-gray-300 rounded-2xl p-6">
@@ -38,7 +44,11 @@ const PlayerCard = ({ player }) => {
       </div>
       <div className="flex justify-between items-center">
         <p className="font-bold text-base">Price: $ {price} </p>
-        <button className="btn text-base font-medium rounded-[10px]">
+        <button
+          disabled={selectBtn === true ? true : false}
+          onClick={handleSetSelectBtn}
+          className="btn text-base font-medium rounded-[10px]"
+        >
           Choose Player
         </button>
       </div>

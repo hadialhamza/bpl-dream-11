@@ -5,7 +5,7 @@ import LoadingCard from "./LoadingCard";
 
 const playersPromise = fetch("/players.json").then((res) => res.json());
 
-const PlayersContainer = () => {
+const PlayersContainer = ({ balance, setBalance, handleSetBalance }) => {
   const [showPlayers, setShowPlayers] = useState(true);
 
   return (
@@ -31,13 +31,18 @@ const PlayersContainer = () => {
           </button>
         </div>
       </div>
-      {showPlayers ? (
-        <Suspense fallback={<LoadingCard />}>
-          <AvailablePlayers playersPromise={playersPromise} />
-        </Suspense>
-      ) : (
-        <SelectedPlayers />
-      )}
+      <Suspense fallback={<LoadingCard />}>
+        {showPlayers ? (
+          <AvailablePlayers
+            playersPromise={playersPromise}
+            balance={balance}
+            setBalance={setBalance}
+            handleSetBalance={handleSetBalance}
+          />
+        ) : (
+          <SelectedPlayers />
+        )}
+      </Suspense>
     </>
   );
 };
