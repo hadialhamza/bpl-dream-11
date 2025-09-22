@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from "react";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
+import LoadingCard from "./LoadingCard";
 
 const playersPromise = fetch("/players.json").then((res) => res.json());
 
@@ -13,9 +14,7 @@ const PlayersContainer = () => {
         <h2 className="text-3xl font-bold">Available Players</h2>
         <div>
           <button
-            onClick={() => {
-              setShowPlayers(true);
-            }}
+            onClick={() => setShowPlayers(true)}
             className={`text-base font-bold px-7 py-3 border border-gray-300 rounded-2xl rounded-r-none border-r-0  cursor-pointer ${
               showPlayers && "bg-[#E7FE29]"
             } `}
@@ -23,9 +22,7 @@ const PlayersContainer = () => {
             Available
           </button>
           <button
-            onClick={() => {
-              setShowPlayers(false);
-            }}
+            onClick={() => setShowPlayers(false)}
             className={`text-base font-bold px-7 py-3 border border-gray-300 rounded-2xl rounded-l-none border-l-0 cursor-pointer ${
               showPlayers || "bg-[#E7FE29]"
             }`}
@@ -35,7 +32,7 @@ const PlayersContainer = () => {
         </div>
       </div>
       {showPlayers ? (
-        <Suspense fallback={<h2>Loading...</h2>}>
+        <Suspense fallback={<LoadingCard />}>
           <AvailablePlayers playersPromise={playersPromise} />
         </Suspense>
       ) : (
