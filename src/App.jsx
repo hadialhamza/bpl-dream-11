@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Players from "./Components/Players";
+
+const playersPromise = fetch("/players.json").then((res) => res.json());
 
 function App() {
-
   return (
     <>
-      <h2>BPL Dream 11</h2>
+      <Navbar />
+      {/* <Players playersPromise={playersPromise} /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
