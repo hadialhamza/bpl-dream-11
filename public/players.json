@@ -2,7 +2,7 @@
   "players": [
     {
       "id": 1,
-      "image": "https://i.ibb.co.com/tw3WWZWw/Shakib-Al-Hasan.jpg",
+      "image": "https://i.ibb.co.com/Sw4C8JXN/shakib.jpg",
       "name": "Shakib Al Hasan",
       "country": "Bangladesh",
       "role": "All-Rounder",
@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "image": "https://i.ibb.co.com/7tMsBWhy/imgi-190-image-51989-1648055966.jpg",
+      "image": "https://i.ibb.co.com/WW4J1Lxt/tamim.png",
       "name": "Tamim Iqbal",
       "country": "Bangladesh",
       "role": "Batsman",
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "image": "https://i.ibb.co.com/rGyCYVt9/imgi-146-mr2-1741254563.png",
+      "image": "https://i.ibb.co.com/pjf3G3C4/musfiq.png",
       "name": "Mushfiqur Rahim",
       "country": "Bangladesh",
       "role": "Wicket-Keeper",
@@ -35,7 +35,7 @@
     },
     {
       "id": 4,
-      "image": "https://i.ibb.co.com/23WY77pC/imgi-202-FMNr-Dd-Za-AAEBm-RP.jpg",
+      "image": "https://i.ibb.co.com/G3rrYY57/mustafiz.jpg",
       "name": "Mustafizur Rahman",
       "country": "Bangladesh",
       "role": "Bowler",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "image": "https://i.ibb.co.com/Zzm2Qzt0/imgi-2-image-215049-1728394846.jpg",
+      "image": "https://i.ibb.co.com/35VbtXv0/mahmudullah.jpg",
       "name": "Mahmudullah Riyad",
       "country": "Bangladesh",
       "role": "All-Rounder",
@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "image": "https://i.ibb.co.com/v6pBKDtq/imgi-201-Chris-Gayle-Double-Century.jpg",
+      "image": "https://i.ibb.co.com/CpYhKpsr/gail.jpg",
       "name": "Chris Gayle",
       "country": "West Indies",
       "role": "Batsman",
@@ -68,7 +68,7 @@
     },
     {
       "id": 7,
-      "image": "https://i.ibb.co.com/ksZZY61N/imgi-172-andre-russell.jpg",
+      "image": "https://i.ibb.co.com/NdZQwNmz/russel.jpg",
       "name": "Andre Russell",
       "country": "West Indies",
       "role": "All-Rounder",
@@ -79,7 +79,7 @@
     },
     {
       "id": 8,
-      "image": "https://i.ibb.co.com/sv0mQV8F/imgi-143-l16820221025132016.jpg",
+      "image": "https://i.ibb.co.com/sd3khQCw/polard.jpg",
       "name": "Kieron Pollard",
       "country": "West Indies",
       "role": "All-Rounder",
@@ -90,7 +90,7 @@
     },
     {
       "id": 9,
-      "image": "https://i.ibb.co.com/YBR4TJnW/imgi-155-Imran-Tahir-CWC-celeb-front-on-3278523.jpg",
+      "image": "https://i.ibb.co.com/pjg80X4f/tahir.jpg",
       "name": "Imran Tahir",
       "country": "South Africa",
       "role": "Bowler",
@@ -101,7 +101,7 @@
     },
     {
       "id": 10,
-      "image": "https://i.ibb.co.com/0yb0Zpdy/imgi-183-skysports-ab-de-villiers-twenty20-south-africa-3981255.jpg",
+      "image": "https://i.ibb.co.com/TDycrxB9/ab.jpg",
       "name": "AB de Villiers",
       "country": "South Africa",
       "role": "Batsman",
@@ -112,7 +112,7 @@
     },
     {
       "id": 11,
-      "image": "https://i.ibb.co.com/MkMT9K9T/imgi-136-MV5-BNz-A3-N2-Uy-ZDkt-Nm-Zi-NC00-MTk3-LWE0-MTYt-OTEx-YTQz-ZTli-MTE4-Xk-Ey-Xk-Fqc-Gc-V1.jpg",
+      "image": "https://i.ibb.co.com/1NnMm4y/warner.jpg",
       "name": "David Warner",
       "country": "Australia",
       "role": "Batsman",
@@ -123,7 +123,7 @@
     },
     {
       "id": 12,
-      "image": "https://i.ibb.co.com/SDVm0yx8/imgi-138-MV5-BYTlh-Yjkz-NTQt-Mj-Fi-NS00-NDYy-LThl-NTgt-MWE4-ZTI0-ZTY4-Nm-M1-Xk-Ey-Xk-Fqc-Gc-V1.jpg",
+      "image": "https://i.ibb.co.com/dwG4jHTB/smith.jpg",
       "name": "Steve Smith",
       "country": "Australia",
       "role": "Batsman",
@@ -134,7 +134,7 @@
     },
     {
       "id": 13,
-      "image": "https://i.ibb.co.com/V0n8hbHj/imgi-156-c83fa79b55bd174d9c2268cb1d1355dda9377554.jpg",
+      "image": "https://i.ibb.co.com/yn9BfZcL/rashid.jpg",
       "name": "Rashid Khan",
       "country": "Afghanistan",
       "role": "Bowler",
@@ -145,7 +145,7 @@
     },
     {
       "id": 14,
-      "image": "https://i.ibb.co.com/4RFJxp5k/imgi-165-FKGrbs-YWUAE88-FV.jpg",
+      "image": "https://i.ibb.co.com/Myws4C9j/nabi.jpg",
       "name": "Mohammad Nabi",
       "country": "Afghanistan",
       "role": "All-Rounder",
@@ -156,7 +156,7 @@
     },
     {
       "id": 15,
-      "image": "https://i.ibb.co.com/MyD2nXw2/imgi-173-1744889486620-babar-azam.jpg",
+      "image": "https://i.ibb.co.com/pjFPjYpW/azam.jpg",
       "name": "Babar Azam",
       "country": "Pakistan",
       "role": "Batsman",
@@ -167,7 +167,7 @@
     },
     {
       "id": 16,
-      "image": "https://i.ibb.co.com/7xNVzBMF/imgi-137-skysports-shaheen-shah-afridi-5537334.jpg",
+      "image": "https://i.ibb.co.com/kgKBdCY7/shahin.jpg",
       "name": "Shaheen Afridi",
       "country": "Pakistan",
       "role": "Bowler",
@@ -178,7 +178,7 @@
     },
     {
       "id": 17,
-      "image": "https://i.ibb.co.com/kgX4QFSy/imgi-162-RCB-1743129770003.jpg",
+      "image": "https://i.ibb.co.com/21FwD6jK/kohli.jpg",
       "name": "Virat Kohli",
       "country": "India",
       "role": "Batsman",
@@ -189,7 +189,7 @@
     },
     {
       "id": 18,
-      "image": "https://i.ibb.co.com/0RvPPHtW/imgi-159-450560-rohit-sharma-t20-wc.webp",
+      "image": "https://i.ibb.co.com/h1WDCS6r/rohit.jpg",
       "name": "Rohit Sharma",
       "country": "India",
       "role": "Batsman",
@@ -200,7 +200,7 @@
     },
     {
       "id": 19,
-      "image": "https://i.ibb.co.com/Q3xGhNWG/imgi-129-Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
+      "image": "https://i.ibb.co.com/p6xL9bSN/dhoni.jpg",
       "name": "MS Dhoni",
       "country": "India",
       "role": "Wicket-Keeper",
@@ -211,7 +211,7 @@
     },
     {
       "id": 20,
-      "image": "https://i.ibb.co.com/kgqLz46j/imgi-161-kane-williamson-test-1600-reuters-16376375604x3.jpg",
+      "image": "https://i.ibb.co.com/N6tqJ3RH/wiliumson.jpg",
       "name": "Kane Williamson",
       "country": "New Zealand",
       "role": "Batsman",
