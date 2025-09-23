@@ -1,13 +1,14 @@
 import React from "react";
-import { FaUser } from "react-icons/fa6";
-import { RxAvatar } from "react-icons/rx";
+import PlayerCard from "./PlayerCard";
 
-const SelectedPlayers = () => {
+const SelectedPlayers = ({ selectedPlayers }) => {
   return (
     <div className="max-w-[1440px] mx-auto">
-      <h2 className="text-3xl font-bold">
-        <RxAvatar /> Selected players
-      </h2>
+      <div className="grid grid-cols-3 gap-6">
+        {selectedPlayers.map((player) => (
+          <PlayerCard key={player.id} player={player} />
+        ))}
+      </div>
     </div>
   );
 };

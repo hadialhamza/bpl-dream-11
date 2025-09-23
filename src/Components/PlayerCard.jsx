@@ -3,7 +3,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 
-const PlayerCard = ({ player, handleSetBalance }) => {
+const PlayerCard = ({ player, handleSetBalance, handleSelectedPlayers }) => {
   const {
     name,
     image,
@@ -18,6 +18,7 @@ const PlayerCard = ({ player, handleSetBalance }) => {
   const [selectBtn, setSelectBtn] = useState(false);
   const handleSetSelectBtn = () => {
     handleSetBalance(price) && setSelectBtn(true);
+    handleSelectedPlayers(player) && setSelectBtn(true);
   };
 
   return (

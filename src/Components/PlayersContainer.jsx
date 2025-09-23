@@ -8,10 +8,25 @@ const playersPromise = fetch("/players.json").then((res) => res.json());
 const PlayersContainer = ({ balance, setBalance, handleSetBalance }) => {
   const [showPlayers, setShowPlayers] = useState(true);
 
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const handleSelectedPlayers = (player) => {
+    if (selectedPlayers.length === 6) {
+      alert("Maximum player added");
+      return false;
+    }
+
+    setSelectedPlayers([...selectedPlayers, player]);
+    return true;
+  };
+
   return (
     <>
       <div className="max-w-[1440px] mx-auto my-5 flex justify-between items-center">
-        <h2 className="text-3xl font-bold">Available Players</h2>
+        <h2 className="text-3xl font-bold">
+          {showPlayers
+            ? "Available Players"
+            : `Selected Players ${selectedPlayers.length}/6`}
+        </h2>
         <div>
           <button
             onClick={() => setShowPlayers(true)}
@@ -27,7 +42,7 @@ const PlayersContainer = ({ balance, setBalance, handleSetBalance }) => {
               showPlayers || "bg-[#E7FE29]"
             }`}
           >
-            Selected
+            {`Selected (${selectedPlayers.length})`}
           </button>
         </div>
       </div>
@@ -38,9 +53,10 @@ const PlayersContainer = ({ balance, setBalance, handleSetBalance }) => {
             balance={balance}
             setBalance={setBalance}
             handleSetBalance={handleSetBalance}
+            handleSelectedPlayers={handleSelectedPlayers}
           />
         ) : (
-          <SelectedPlayers />
+          <SelectedPlayers selectedPlayers={selectedPlayers} />
         )}
       </Suspense>
     </>
