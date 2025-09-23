@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
+import { TiTick } from "react-icons/ti";
 
 const PlayerCard = ({ player, handleSetBalance }) => {
   const {
@@ -16,8 +17,7 @@ const PlayerCard = ({ player, handleSetBalance }) => {
 
   const [selectBtn, setSelectBtn] = useState(false);
   const handleSetSelectBtn = () => {
-    setSelectBtn(true);
-    handleSetBalance(price);
+    handleSetBalance(price) && setSelectBtn(true);
   };
 
   return (
@@ -45,11 +45,17 @@ const PlayerCard = ({ player, handleSetBalance }) => {
       <div className="flex justify-between items-center">
         <p className="font-bold text-base">Price: $ {price} </p>
         <button
-          disabled={selectBtn === true ? true : false}
+          disabled={selectBtn}
           onClick={handleSetSelectBtn}
-          className="btn text-base font-medium rounded-[10px]"
+          className="btn btn-info text-base font-medium rounded-[10px]"
         >
-          Choose Player
+          {selectBtn ? (
+            <>
+              Player Selected <TiTick className="text-xl" />
+            </>
+          ) : (
+            "Choose Player"
+          )}
         </button>
       </div>
     </div>

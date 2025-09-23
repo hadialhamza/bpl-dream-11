@@ -8,9 +8,10 @@ function App() {
   const handleSetBalance = (price) => {
     if (price > balance) {
       alert("you don't have enough balance");
-      return;
+      return false;
     }
     setBalance(balance - price);
+    return true;
   };
 
   return (

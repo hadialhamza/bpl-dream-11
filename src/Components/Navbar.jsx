@@ -15,7 +15,7 @@ const Navbar = ({ balance }) => {
         <a>Schedules</a>
         <p className="flex justify-center items-center gap-2 font-bold text-xl border border-gray-300 rounded-2xl p-3">
           <span>{balance}</span> Coin{" "}
-          <img src={CoinLogo} alt="" className="w-7" />{" "}
+          <img src={CoinLogo} alt="" className="w-7" />
         </p>
       </div>
     </nav>
