@@ -7,11 +7,12 @@ const AvailablePlayers = ({
   setBalance,
   handleSetBalance,
   handleSelectedPlayers,
+  selectedPlayers,
 }) => {
   const playersData = use(playersPromise);
   const allPlayers = playersData.players;
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-3 gap-6">
+    <div className="container w-[97%] mx-auto grid grid-cols-3 gap-6">
       {allPlayers.map((player) => (
         <PlayerCard
           key={player.id}
@@ -20,6 +21,7 @@ const AvailablePlayers = ({
           setBalance={setBalance}
           handleSetBalance={handleSetBalance}
           handleSelectedPlayers={handleSelectedPlayers}
+          selectedPlayers={selectedPlayers}
         />
       ))}
     </div>

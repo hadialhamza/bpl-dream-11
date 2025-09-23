@@ -28,7 +28,7 @@ const LoadingCard = () => {
   //   const newArr = Array(6);
 
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-3 gap-6">
+    <div className="container w-[97%] mx-auto grid grid-cols-3 gap-6">
       {Array.from({ length: 6 }).map((_, index) => (
         <Loader key={index} />
       ))}

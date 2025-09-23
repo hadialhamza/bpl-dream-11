@@ -3,8 +3,15 @@ import { IoPersonSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
-const PlayerCard = ({ player, handleSetBalance, handleSelectedPlayers }) => {
+const PlayerCard = ({
+  player,
+  handleSetBalance,
+  handleSelectedPlayers,
+  selectedPlayers,
+  balance,
+}) => {
   const {
     name,
     image,
@@ -18,9 +25,30 @@ const PlayerCard = ({ player, handleSetBalance, handleSelectedPlayers }) => {
 
   const [selectBtn, setSelectBtn] = useState(false);
   const handleSetSelectBtn = () => {
-    handleSetBalance(price) && setSelectBtn(true);
-    handleSelectedPlayers(player) && setSelectBtn(true);
-    toast.success("Player selected");
+    if (selectedPlayers.length !== 6 && price < balance) {
+      handleSetBalance(price);
+      handleSelectedPlayers(player);
+      setSelectBtn(true);
+      toast.success("Player selected", {
+        position: "top-center",
+      });
+    } else {
+      if (balance < price) {
+        Swal.fire({
+          title: "Not Enough Coin",
+          text: "You do not have enough coin to buy this player",
+          icon: "error",
+          confirmButtonText: "Close",
+        });
+      } else {
+        Swal.fire({
+          title: "Maximum Player Added!",
+          text: "You can not select more then 6 players",
+          icon: "info",
+          confirmButtonText: "Close",
+        });
+      }
+    }
   };
 
   return (
