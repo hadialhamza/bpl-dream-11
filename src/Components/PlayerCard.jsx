@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
+import { toast } from "react-toastify";
 
 const PlayerCard = ({ player, handleSetBalance, handleSelectedPlayers }) => {
   const {
@@ -19,6 +20,7 @@ const PlayerCard = ({ player, handleSetBalance, handleSelectedPlayers }) => {
   const handleSetSelectBtn = () => {
     handleSetBalance(price) && setSelectBtn(true);
     handleSelectedPlayers(player) && setSelectBtn(true);
+    toast.success("Player selected");
   };
 
   return (

@@ -2,6 +2,8 @@ import React, { Suspense, useState } from "react";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 import LoadingCard from "./LoadingCard";
+import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const playersPromise = fetch("/players.json").then((res) => res.json());
 
@@ -11,7 +13,13 @@ const PlayersContainer = ({ balance, setBalance, handleSetBalance }) => {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   const handleSelectedPlayers = (player) => {
     if (selectedPlayers.length === 6) {
-      alert("Maximum player added");
+      toast.info("Maximum Player Selected");
+      Swal.fire({
+        title: "Error!",
+        text: "Do you want to continue",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
       return false;
     }
 
